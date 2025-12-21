@@ -1,4 +1,5 @@
 ---
+layout: main
 title: Han and Dan are (finally!) getting married
 ---
 
