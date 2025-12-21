@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: main.njk
 title: Han and Dan are (finally!) getting married
 ---
 
