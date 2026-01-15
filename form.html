@@ -1,61 +1,46 @@
-<html lang="en">
-  <head>
-    <meta charset="utf8" />
-    <title>Form Demo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-  </head>
-  <body>
-    <form method="POST" action="/api/submit">
-      <div class="input">
-        <label for="name">Full Name</label>
-        <input id="name" name="name" type="text" />
-      </div>
+---
+layout: main.njk
+---
+<form method="POST" action="/api/submit">
+  <div class="input">
+    <label for="name">Your Name(s)</label>
+    <input id="name" name="name" type="text" required />
+  </div>
 
-      <div class="input">
-        <label for="email">Email Address</label>
-        <input id="email" name="email" type="email" />
-      </div>
+  <div class="input">
+    <label for="email">Email Address</label>
+    <input id="email" name="email" type="email" required/>
+  </div>
 
-      <div class="input">
-        <label for="referers">How did you hear about us?</label>
-        <select id="referers" name="referers">
-          <option hidden disabled selected value></option>
-          <option value="Facebook">Facebook</option>
-          <option value="Twitter">Twitter</option>
-          <option value="Google">Google</option>
-          <option value="Bing">Bing</option>
-          <option value="Friends">Friends</option>
-        </select>
-      </div>
+  <fieldset>
+    <legend>Are you coming?</legend>
+    <input type="radio" name="coming" id="coming-yes"><label for="coming-yes">Yes! Can't wait.</label>
+    <input type="radio" name="coming" id="coming-no"><label for="coming-no">Sorry, no.</label>
+  </fieldset>
 
-      <div class="checklist">
-        <label>What are your favorite movies?</label>
-        <ul>
-          <li>
-            <input id="m1" type="checkbox" name="movies" value="Space Jam" />
-            <label for="m1">Space Jam</label>
-          </li>
-          <li>
-            <input
-              id="m2"
-              type="checkbox"
-              name="movies"
-              value="Little Rascals"
-            />
-            <label for="m2">Little Rascals</label>
-          </li>
-          <li>
-            <input id="m3" type="checkbox" name="movies" value="Frozen" />
-            <label for="m3">Frozen</label>
-          </li>
-          <li>
-            <input id="m4" type="checkbox" name="movies" value="Home Alone" />
-            <label for="m4">Home Alone</label>
-          </li>
-        </ul>
-      </div>
+  <fieldset hidden>
+    <legend>When are you coming?</legend>
+    <input type="radio" name="guest-type" id="guest-type-all"><label for="guest-type-all">The whole 3 days!</label>
+    <input type="radio" name="guest-type" id="guest-type-day"><label for="guest-type-day">The Ceremony</label>
+    <input type="radio" name="guest-type" id="guest-type-evening"><label for="guest-type-evening">The Evening Do</label>
+  </fieldset>
 
-      <button type="submit">Submit</button>
-    </form>
-  </body>
-</html>
+  <div hidden>
+    <h2>Wedding Breakfast</h2>
+    <fieldset>
+      <legend>What would you like for your main meal?</legend>
+      <input type="radio" name="guest-type" id="guest-type-all"><label for="guest-type-all">The whole 3 days!</label>
+      <input type="radio" name="guest-type" id="guest-type-day"><label for="guest-type-day">The Ceremony</label>
+      <input type="radio" name="guest-type" id="guest-type-evening"><label for="guest-type-evening">The Evening Do</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What would you like for dessert?</legend>
+      <input type="radio" name="guest-type" id="guest-type-all"><label for="guest-type-all">The whole 3 days!</label>
+      <input type="radio" name="guest-type" id="guest-type-day"><label for="guest-type-day">The Ceremony</label>
+      <input type="radio" name="guest-type" id="guest-type-evening"><label for="guest-type-evening">The Evening Do</label>
+    </fieldset>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
