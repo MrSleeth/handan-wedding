@@ -55,7 +55,7 @@ async function createAirtableRecord(env, body) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (url.pathname === "/api/submit") {
+    if (url.pathname === "/submit") {
       await submitHandler(request, env);
     }
     return new Response("Not found", { status: 404 });
