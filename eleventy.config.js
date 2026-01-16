@@ -1,5 +1,7 @@
-export const config = {
-  htmlTemplateEngine: "njk",
-  markdownTemplateEngine: "njk",
-  addPassthroughCopy: "_worker.js"
+export default function (eleventyConfig) {
+	// Reset to this value
+	eleventyConfig.setTemplateFormats("njk, html");
+  eleventyConfig.markdownTemplateEngine("njk");
+
+	eleventyConfig.addPassthroughCopy("_worker.js");
 };
