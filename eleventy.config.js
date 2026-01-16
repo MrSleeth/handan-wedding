@@ -1,7 +1,7 @@
-export default function (eleventyConfig) {
+export default async function (eleventyConfig) {
 	// Reset to this value
 	eleventyConfig.setTemplateFormats("njk, html");
-  eleventyConfig.markdownTemplateEngine("njk");
+  // eleventyConfig.markdownTemplateEngine("njk");
 
 	eleventyConfig.addPassthroughCopy("_worker.js");
 };
