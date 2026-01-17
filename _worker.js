@@ -1,7 +1,7 @@
 async function createAirtableRecord(env, body) {
   console.log("airtable");
   try {
-    const result = fetch(
+    const res = await fetch(
       `https://api.airtable.com/v0/${env.AIRTABLE_BASE_ID}/${encodeURIComponent(env.AIRTABLE_TABLE_NAME)}`,
       {
         method: "POST",
@@ -12,18 +12,20 @@ async function createAirtableRecord(env, body) {
         },
       },
     );
-    return result;
+
+    const text = await res.text();
+    if (!res.ok) {
+      console.error("Airtable error", res.status, text);
+      throw new Error(`Airtable returned ${res.status}: ${text}`);
+    }
+
+    // return parsed JSON (contains the created record id)
+    return JSON.parse(text);
   } catch (error) {
     console.error(error);
+    throw error;
   }
 }
-
-// TODO: Dietary
-// TODO: Sunday attendance
-
-// Existing code
-// async function submitHandler
-// export default ...
 
 async function submitHandler(request, env) {
   console.log("submitHandler");
@@ -32,14 +34,11 @@ async function submitHandler(request, env) {
       status: 405,
     });
   }
-  const body = await request.formData();
 
-  const { name, rsvp, main_meal, dessert, non_drinker, more_info} =
+  const body = await request.formData();
+  const { name, rsvp, main_meal, dessert, non_drinker, more_info } =
     Object.fromEntries(body);
 
-  // The keys in "fields" are case-sensitive, and
-  // should exactly match the field names you set up
-  // in your Airtable table, such as "First Name".
   const reqBody = {
     fields: {
       Name: name,
@@ -50,11 +49,18 @@ async function submitHandler(request, env) {
       Other: more_info
     },
   };
-  await createAirtableRecord(env, reqBody);
-}
 
-// Existing code
-// export default ...
+  try {
+    const airtableResp = await createAirtableRecord(env, reqBody);
+    return new Response(JSON.stringify({ success: true, id: airtableResp.id }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" }
+    });
+  } catch (err) {
+    console.error("Failed to create airtable record:", err);
+    return new Response("Failed to save", { status: 500 });
+  }
+}
 
 export default {
   async fetch(request, env) {
@@ -62,14 +68,15 @@ export default {
 
     if (url.pathname.startsWith("/api/")) {
       console.log("API", url.pathname);
-      if (url.pathname === "/api/submit") {
-        console.log("SUBMIT")
-        await submitHandler(request, env);
+      if (url.pathname === "/api/submit" || url.pathname === "/api/submit/") {
+        console.log("SUBMIT");
+        // IMPORTANT: return the response from submitHandler
+        return await submitHandler(request, env);
       }
       return new Response("Not found..?", { status: 404 });
     }
+
     // Otherwise, serve the static assets.
-    // Without this, the Worker will error and no assets will be served.
     return env.ASSETS.fetch(request);
   },
 };
