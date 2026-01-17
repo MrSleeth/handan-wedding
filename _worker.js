@@ -64,7 +64,7 @@ export default {
       console.log("API", url.pathname);
       if (url.pathname === "/api/submit") {
         console.log("SUBMIT")
-        return await submitHandler(request, env);
+        await submitHandler(request, env);
       }
       return new Response("Not found..?", { status: 404 });
     }
