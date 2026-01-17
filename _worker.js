@@ -66,7 +66,7 @@ export default {
         console.log("SUBMIT")
         await submitHandler(request, env);
       }
-      return new Response("Not found..?", { status: 404 });
+   //   return new Response("Not found..?", { status: 404 });
     }
     // Otherwise, serve the static assets.
     // Without this, the Worker will error and no assets will be served.
