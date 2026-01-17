@@ -4,46 +4,57 @@ title: RSVP
 ---
 <form method="POST" action="/api/submit">
   <div class="input">
-    <label for="name">Your Name(s)</label>
+    <label for="name">Your Name</label>
     <input id="name" name="name" type="text" required />
   </div>
 
   <fieldset>
     <legend>Are you coming?</legend>
-    <input type="radio" name="rsvp" id="yes"><label for="yes">Yes! Can't wait.</label>
-    <input type="radio" name="rsvp" id="no"><label for="no">Sorry, no.</label>
+    <input type="radio" name="rsvp" id="yes" value="Coming" required><label for="yes">Yes! Can't wait.</label>
+    <input type="radio" name="rsvp" id="no" value="Not Coming" required><label for="no">Sorry, no.</label>
   </fieldset>
 
   <fieldset>
     <legend>When are you coming?</legend>
-    <input type="radio" name="guest_type" id="guest-type-all"><label for="guest-type-all">The whole 3 days!</label>
-    <input type="radio" name="guest_type" id="guest-type-day"><label for="guest-type-day">The Ceremony</label>
-    <input type="radio" name="guest_type" id="guest-type-evening"><label for="guest-type-evening">The Evening Do</label>
+    <input type="radio" name="guest_type" id="guest-type-all" value="All" required><label for="guest-type-all">The whole 3 days!</label>
+    <input type="radio" name="guest_type" id="guest-type-day" value="Ceremony" required><label for="guest-type-day">The Ceremony</label>
+    <input type="radio" name="guest_type" id="guest-type-evening" value="Evening" required><label for="guest-type-evening">The Evening Do</label>
   </fieldset>
 
   <div>
     <h2>Wedding Breakfast</h2>
     <fieldset>
       <legend>What would you like for your main meal?</legend>
-      <input type="radio" name="main_meal" id="main-meal-chicken"><label for="main-meal-chicken">Chicken</label>
-      <input type="radio" name="main_meal" id="main-meal-beef"><label for="main-meal-beef">Slow Cooked Beef</label>
-      <input type="radio" name="main_meal" id="main-meal-tart"><label for="main-meal-tart">Mediterranean Tart (v)</label>
-      <input type="radio" name="main_meal" id="main-meal-kids"><label for="main-meal-kids">Fish Fingers (children)</label>
+      <input type="radio" name="main_meal" id="main-meal-chicken" value="Chicken" required><label for="main-meal-chicken">Chicken</label>
+      <input type="radio" name="main_meal" id="main-meal-beef" value="Beef" required><label for="main-meal-beef">Slow Cooked Beef</label>
+      <input type="radio" name="main_meal" id="main-meal-tart" value="Veggie" required><label for="main-meal-tart">Mediterranean Tart (v)</label>
+      <input type="radio" name="main_meal" id="main-meal-kids" value="Kids" required><label for="main-meal-kids">Fish Fingers (children)</label>
     </fieldset>
 
     <fieldset>
       <legend>What would you like for dessert?</legend>
-      <input type="radio" name="dessert" id="dessert-treo"><label for="dessert-treo">Northside Trio</label>
-      <input type="radio" name="dessert" id="dessert-stp"><label for="dessert-stp">Sticky Toffee Pudding</label>
-      <input type="radio" name="dessert" id="dessert-posset"><label for="dessert-posset">Lemon Posset</label>
-      <input type="radio" name="dessert" id="dessert-kids"><label for="dessert-3">Ice Cream (children)</label>
+      <input type="radio" name="dessert" id="dessert-trio" value="Trio" required><label for="dessert-trio">Northside Trio</label>
+      <input type="radio" name="dessert" id="dessert-stp" value="STP" required><label for="dessert-stp">Sticky Toffee Pudding</label>
+      <input type="radio" name="dessert" id="dessert-posset" value="Posset" required><label for="dessert-posset">Lemon Posset</label>
+      <input type="radio" name="dessert" id="dessert-kids" value="Kids" required><label for="dessert-3">Ice Cream (children)</label>
     </fieldset>
   </div>
 
   <div>
-    <label for="non-drinker">Non-drinker?</label>
-    <input type="checkbox" id="non-drinker" name="non_drinker">
+    <label for="dietary">Let us know if you have any dietary requirements</label>
+    <input type="text" id="dietary" name="dietary">
   </div>
+
+  <div>
+    <label for="non-drinker">Non-drinker?</label>
+    <input type="checkbox" id="non-drinker" name="non_drinker" value="Non-drinker">
+  </div>
+
+  <fieldset>
+    <legend>Will you be attending the Sunday Funday</legend>
+    <input type="radio" name="sunday" id="sunday-yes" value="Yes" required><label for="sunday-yes">Yes</label>
+    <input type="radio" name="sunday" id="sunday-no" value="No" required checked><label for="sunday-no">No</label>
+  </fieldset>
 
   <div>
     <label for="more-info">Is there anything else we need to know?</label>

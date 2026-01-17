@@ -36,7 +36,7 @@ async function submitHandler(request, env) {
   }
 
   const body = await request.formData();
-  const { name, rsvp, main_meal, dessert, non_drinker, more_info } =
+  const { name, rsvp, main_meal, dessert, dietary, sunday, non_drinker, more_info } =
     Object.fromEntries(body);
 
   const reqBody = {
@@ -45,6 +45,8 @@ async function submitHandler(request, env) {
       RSVP: rsvp,
       "Main Meal": main_meal,
       Dessert: dessert,
+      Dietary: dietary,
+      Sunday: sunday,
       Alcohol: non_drinker,
       Other: more_info
     },
