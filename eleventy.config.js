@@ -4,4 +4,5 @@ export default async function (eleventyConfig) {
   // eleventyConfig.markdownTemplateEngine("njk");
 
 	eleventyConfig.addPassthroughCopy("_worker.js");
+	eleventyConfig.addPassthroughCopy("bundle.css");
 };
