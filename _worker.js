@@ -1,4 +1,5 @@
 async function createAirtableRecord(env, body) {
+  console.log("airtable");
   try {
     const result = fetch(
       `https://api.airtable.com/v0/${env.AIRTABLE_BASE_ID}/${encodeURIComponent(env.AIRTABLE_TABLE_NAME)}`,
@@ -25,6 +26,7 @@ async function createAirtableRecord(env, body) {
 // export default ...
 
 async function submitHandler(request, env) {
+  console.log("submitHandler");
   if (request.method !== "POST") {
     return new Response("Method Not Allowed", {
       status: 405,
