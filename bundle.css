@@ -90,5 +90,35 @@ textarea:not([rows]) {
 }
 
 fieldset {
+/*   display: block; */
+}
+
+fieldset:has([type="radio"]) label {
+  display: inline-block;
+}
+
+label {
   display: block;
+}
+
+[type="text"],
+textarea,
+fieldset {
+  border-color: var(--ochre);
+  border-radius: 5px;
+  border-width: 3px;
+  outline: none;
+  width: 100%;
+}
+
+:invalid {
+  border-color: red;
+}
+
+button {
+  appearance: none;
+  background-color: var(--green);
+  padding: 2rem 5rem;
+  border-radius: 5px;
+  font-size: 2em;
 }
