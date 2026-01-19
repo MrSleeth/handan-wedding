@@ -133,7 +133,10 @@ nav a {
 }
 
 .banner {
-  background-image: url(/images/pink_banner.png);
+  background-image: url(/assets/images/pink_banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -126px;
 }
 
 .banner path {
