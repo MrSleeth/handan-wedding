@@ -116,6 +116,17 @@ textarea:not([rows]) {
 
 body {
   background-color: var(--blue);
+  color: hsl(204, 70%, 5%);
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
 }
 
 
