@@ -121,14 +121,19 @@ body {
 }
 
 nav {
-  display: flex;
+  
 }
 
 nav > ul {
+  display: flex;
+  gap: 1em;
   list-style-type: none;
   margin: 0;
 }
 
+nav a {
+  text-decoration: none;
+}
 
 
 
