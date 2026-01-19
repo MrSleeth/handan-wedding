@@ -5,4 +5,5 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("_worker.js");
 	eleventyConfig.addPassthroughCopy("bundle.css");
+	eleventyConfig.addPassthroughCopy("/assets/**");
 };
