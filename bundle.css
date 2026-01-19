@@ -157,6 +157,18 @@ main li {
   list-style-image: url("/assets/images/daisy_bullet.png");
 }
 
+.cards {
+  display: flex;
+  gap: 1.5em;
+}
+
+.card {
+  padding: 1.5em;
+  border-radius: var(--radius);
+  outline: dashed 4px currentColor;
+  outline-offset: -6px;
+}
+
 /* Form styles */
 
 fieldset {
