@@ -6,6 +6,8 @@
   --green: #97a772;
   --orange: #d87030;
   --blue: #81afcd;
+
+  --radius: 5px;
 }
 
 @view-transition {

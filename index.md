@@ -1,6 +1,6 @@
 ---
 layout: main.njk
-title: Han and Dan are (finally!) getting married
+title: Han + Dan
 ---
 
 ## Hello, you look nice
