@@ -7,12 +7,16 @@ bar_closed: 10
 
 ## Timings
 
+<div class="cards">
+  <div class="card">
 ### Friday
 
 - The weekend kicks off at 5pm on Friday, 3rd April
 - Lucca Pizza van arrives at 7:30pm — it's on us!
 - Bar opens from {{ bar_open }}pm to {{ bar_closed }}pm — sadly, not on us!
+</div>
 
+<div class="card">
 ### Saturday: Ceremony
 
 - 11:30am: Guests arrive and bar opens
@@ -31,6 +35,9 @@ bar_closed: 10
 - 9pm – 10pm: More live music
 - 11pm: Music and dancing
 - 12am: Bar closes
+</div>
 
+<div class="card">
 ### Sunday Funday
-
+</div>
+</div>
