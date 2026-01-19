@@ -116,7 +116,7 @@ textarea:not([rows]) {
 /* Global styles */
 
 html {
-  margin: 2rem 5rem;
+  margin: 3rem;
 }
 
 body {
@@ -124,6 +124,8 @@ body {
   color: hsl(204, 70%, 5%);
   font-size: 2.5em;
   border: dashed 4px currentColor;
+  border-radius: var(--radius);
+  padding: 3rem;
 }
 
 nav > ul {
