@@ -20,6 +20,7 @@
          url('/assets/fonts/newyorkbakerycaps-thick-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -28,6 +29,7 @@
          url('/assets/fonts/newyorkbakeryscript-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Reset ℅: https://piccalil.li/blog/a-more-modern-css-reset/ */
