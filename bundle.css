@@ -154,7 +154,7 @@ nav a:focus-visible {
 }
 
 main li {
-  list-style-image: url("/assets/images/daisy.png");
+  list-style-image: url("/assets/images/daisy_bullet.png");
 }
 
 /* Form styles */
