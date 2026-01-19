@@ -111,6 +111,18 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+
+/* Global styles */
+
+body {
+  background-color: var(--blue);
+}
+
+
+
+
+/* Form styles */
+
 fieldset {
 /*   display: block; */
 }
