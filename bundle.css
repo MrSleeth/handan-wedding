@@ -115,10 +115,15 @@ textarea:not([rows]) {
 
 /* Global styles */
 
+html {
+  margin: 2rem 5rem;
+}
+
 body {
   background-color: var(--blue);
   color: hsl(204, 70%, 5%);
   font-size: 2.5em;
+  border: dashed 4px currentColor;
 }
 
 nav > ul {
