@@ -153,6 +153,10 @@ nav a:focus-visible {
   fill: transparent;
 }
 
+main li {
+  list-style-image: url("/assets/images/daisy.png");
+}
+
 /* Form styles */
 
 fieldset {
