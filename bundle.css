@@ -120,10 +120,6 @@ body {
   font-size: 2em;
 }
 
-nav {
-  
-}
-
 nav > ul {
   display: flex;
   gap: 1em;
@@ -136,7 +132,13 @@ nav a {
   text-decoration: none;
 }
 
+.banner {
+  background-image: url(/images/pink_banner.png);
+}
 
+.banner path {
+  fill: transparent;
+}
 
 /* Form styles */
 
