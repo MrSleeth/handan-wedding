@@ -71,7 +71,8 @@ body {
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
-button, input, label {
+button, input, label,
+nav {
   line-height: 1.1;
 }
 
@@ -117,12 +118,13 @@ textarea:not([rows]) {
 body {
   background-color: var(--blue);
   color: hsl(204, 70%, 5%);
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 nav > ul {
   display: flex;
   gap: 1em;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -130,6 +132,14 @@ nav > ul {
 
 nav a {
   text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: var(--ochre);
+  outline-offset: 3px;
+  outline-width: 2px;
+  outline-style: dashed;
 }
 
 .banner {
