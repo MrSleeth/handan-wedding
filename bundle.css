@@ -86,7 +86,7 @@ h1::after {
 h1, h2, h3, h4,
 button, input, label,
 nav {
-  line-height: 1.1;
+  line-height: 1;
 }
 
 /* Balance text wrapping on headings */
@@ -159,7 +159,7 @@ body {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  column-gap: 1em;
   justify-content: center;
   list-style-type: none;
   margin: 0;
