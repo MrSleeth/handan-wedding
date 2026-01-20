@@ -249,18 +249,19 @@ main li::before {
   background-image: url("/assets/images/daisy_bullet.png");
 }
 
-.cards {
-  /* display: flex; */
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .card {
   padding: 1.5em;
   border-radius: var(--radius);
   outline: dashed 4px currentColor;
   outline-offset: -10px;
   flex: 1;
+}
+
+@media (min-width: 700px) {
+  .card {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 .card:nth-of-type(1) {
@@ -315,7 +316,7 @@ label {
 [type="text"],
 textarea,
 fieldset {
-  border-color: var(--green);
+  border-color: var(--blue);
   border-radius: 5px;
   border-width: 3px;
   border-style: solid;
@@ -327,7 +328,7 @@ fieldset {
   margin-inline-start: .5em;
 }
 
-:invalid:not(:empty) {
+input:invalid:not(:empty) {
   border-color: red;
 }
 
@@ -336,5 +337,5 @@ button {
   background-color: var(--green);
   padding: 2rem 5rem;
   border-radius: 5px;
-  font-size: 2em;
+  font-size: 1.5em;
 }

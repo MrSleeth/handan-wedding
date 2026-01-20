@@ -14,9 +14,9 @@ You've been invited to Hannah (and Dan's) Special Day. This site will give you a
     <h3>Friday</h3>
 
 - 5pm: <br>The weekend kicks off. Those with glamping pods and teepees can arrive and get settled in
-- 7:30pm: <br>Lucca Pizza van arrives — it's on us!
 - {{ bar_open }}pm: <br>Bar opens — sadly, not on us!
-- {{ bar_closed }}pm: <br>Bar closes
+- 7:30pm: <br>Lucca Pizza van arrives — it's on us!
+- {{ bar_closed }}pm: <br>Bar closes — go get your beauty sleep 
   </div>
 
 <div class="card flow">
