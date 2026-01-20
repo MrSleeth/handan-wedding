@@ -21,7 +21,13 @@ title: RSVP
     <input type="radio" name="guest_type" id="guest-type-evening" value="Evening" required><label for="guest-type-evening">The Evening Do</label>
   </fieldset>
 
-  <div>
+  <fieldset>
+    <legend>Will you be attending the Sunday Funday</legend>
+    <input type="radio" name="sunday" id="sunday-yes" value="Yes" required><label for="sunday-yes">Yes</label><br>
+    <input type="radio" name="sunday" id="sunday-no" value="No" required checked><label for="sunday-no">No</label>
+  </fieldset>
+
+  <div class="flow">
     <h2>Wedding Breakfast</h2>
     <fieldset>
       <legend>What would you like for your main meal?</legend>
@@ -49,12 +55,6 @@ title: RSVP
     <label for="non-drinker">Non-drinker?</label>
     <input type="checkbox" id="non-drinker" name="non_drinker" value="Non-drinker">
   </div>
-
-  <fieldset>
-    <legend>Will you be attending the Sunday Funday</legend>
-    <input type="radio" name="sunday" id="sunday-yes" value="Yes" required><label for="sunday-yes">Yes</label><br>
-    <input type="radio" name="sunday" id="sunday-no" value="No" required checked><label for="sunday-no">No</label>
-  </fieldset>
 
   <div>
     <label for="more-info">Is there anything else we need to know?</label>
