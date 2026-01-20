@@ -235,7 +235,7 @@ main li::before {
 }
 
 .card:nth-of-type(1) {
- background-color: var(--orange); 
+ background-color: var(--ochre); 
  /* rotate: -1deg; */
 }
 
@@ -250,7 +250,7 @@ main li::before {
 }
 
 .card:nth-of-type(4) {
- background-color: var(--ochre); 
+ background-color: var(--pink); 
  /* rotate: -2deg; */
 }
 
@@ -259,6 +259,11 @@ main li::before {
 }
 
 /* Form styles */
+
+form {
+  max-width: 800px;
+  margin-inline: auto;
+}
 
 fieldset {
   border: none;
