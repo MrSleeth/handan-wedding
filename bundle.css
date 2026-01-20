@@ -134,8 +134,8 @@ body {
   background-color: var(--blue);
   color: hsl(204, 70%, 5%);
   font-size: 2.5em;
-  border: dashed 4px currentColor;
-  border-radius: var(--radius);
+  /* border: dashed 4px currentColor;
+  border-radius: var(--radius); */
   padding: 3rem;
 }
 
@@ -178,6 +178,10 @@ a:focus-visible {
   align-items: center;
 }
 
+.date {
+  margin: auto;
+}
+
 main li {
   list-style-image: url("/assets/images/daisy_bullet.png");
 }
@@ -198,17 +202,17 @@ main li {
 
 .card:nth-of-type(1) {
  background-color: var(--green); 
- rotate: -1deg;
+ /* rotate: -1deg; */
 }
 
 .card:nth-of-type(2) {
  background-color: var(--lightyellow); 
- rotate: 1deg;
+ /* rotate: 1deg; */
 }
 
 .card:nth-of-type(3) {
  background-color: var(--lightpink); 
- rotate: -2deg;
+ /* rotate: -2deg; */
 }
 /* Form styles */
 
@@ -234,7 +238,7 @@ fieldset {
   width: 100%;
 }
 
-:invalid {
+:invalid:not(:empty) {
   border-color: red;
 }
 
