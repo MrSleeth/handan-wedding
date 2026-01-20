@@ -75,12 +75,12 @@ h1 {
   text-align: center;
 }
 
-h1::before,
+/* h1::before,
 h1::after {
   content: url("/assets/images/sunflower_2.png");
   display: inline-block;
   width: 1rem;
-}
+} */
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
@@ -168,6 +168,17 @@ nav > ul {
 
 nav a {
   text-decoration: none;
+  background-color: var(--lightyellow);
+  outline: dashed 3px;
+  outline-offset: -5px;
+}
+
+nav a:nth-of-type(odd) {
+  rotate: 3deg;
+}
+
+nav a:nth-of-type(even) {
+  rotate: -4deg;
 }
 
 a:hover,
