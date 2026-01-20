@@ -171,6 +171,7 @@ a:focus-visible {
   grid-template-rows: 1fr 1fr auto auto;
   align-items: center;
   max-width: 800px;
+  margin-inline: auto;
 }
 
 .handan :nth-child(1) {
