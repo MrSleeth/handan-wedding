@@ -6,7 +6,7 @@
   --green: #97a772;
   --orange: #d87030;
   --blue: #81afcd;
-
+  --flow-space: 1.5em;
   --radius: 5px;
 }
 
@@ -66,7 +66,7 @@ ol[role='list'] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  line-height: 1.1;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -80,6 +80,10 @@ nav {
 h1, h2,
 h3, h4 {
   text-wrap: balance;
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
 }
 
 /* A elements that don't have a class get default styles */
