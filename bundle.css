@@ -115,8 +115,19 @@ textarea:not([rows]) {
 
 /* Global styles */
 
+.skip-link {
+  display: none;
+}
+
+.skip-link:focus {
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
 html {
-  margin: 3rem;
+  /* margin: 3rem; */
 }
 
 body {
@@ -130,6 +141,7 @@ body {
 
 nav > ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
   list-style-type: none;
@@ -141,8 +153,8 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover,
-nav a:focus-visible {
+a:hover,
+a:focus-visible {
   background-color: var(--ochre);
   outline-offset: 3px;
   outline-width: 2px;
@@ -166,7 +178,8 @@ main li {
 
 .cards {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .card {
