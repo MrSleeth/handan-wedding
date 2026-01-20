@@ -159,7 +159,7 @@ body {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1em;
+  gap: .3em;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -172,15 +172,21 @@ nav a {
   padding-inline: .4em;
   outline: dashed 3px;
   outline-offset: -5px;
+  border-radius: var(--radius);
 }
 
-nav li:nth-of-type(odd) a {
+nav a:hover,
+nav a:focus {
+  background-color: var(--pink);
+}
+
+/* nav li:nth-of-type(odd) a {
   rotate: 3deg;
 }
 
 nav li:nth-of-type(even) a {
   rotate: -4deg;
-}
+} */
 
 a:hover,
 a:focus-visible {
@@ -229,6 +235,10 @@ a:focus-visible {
 
 .date {
   margin: auto;
+}
+
+main {
+  margin-block-start: 1.5rem;
 }
 
 main li::before {
