@@ -13,9 +13,10 @@ You've been invited to Hannah (and Dan's) Special Day. This site will give you a
   <div class="card flow">
     <h3>Friday</h3>
 
-- The weekend kicks off at 5pm on Friday, 3rd April
-- Lucca Pizza van arrives at 7:30pm — it's on us!
-- Bar opens from {{ bar_open }}pm to {{ bar_closed }}pm — sadly, not on us!
+- 5pm: <br>The weekend kicks off. Those with glamping pods and teepees can arrive and get settled in
+- 7:30pm: Lucca Pizza van arrives — it's on us!
+- {{ bar_open }}pm: Bar opens — sadly, not on us!
+- {{ bar_closed }}pm: Bar closes
   </div>
 
 <div class="card flow">
