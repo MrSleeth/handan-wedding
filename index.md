@@ -14,13 +14,13 @@ You've been invited to Hannah (and Dan's) Special Day. This site will give you a
     <h3>Friday</h3>
 
 - 5pm: <br>The weekend kicks off. Those with glamping pods and teepees can arrive and get settled in
-- 7:30pm: Lucca Pizza van arrives — it's on us!
-- {{ bar_open }}pm: Bar opens — sadly, not on us!
-- {{ bar_closed }}pm: Bar closes
+- 7:30pm: <br>Lucca Pizza van arrives — it's on us!
+- {{ bar_open }}pm: <br>Bar opens — sadly, not on us!
+- {{ bar_closed }}pm: <br>Bar closes
   </div>
 
 <div class="card flow">
-  <h3>Saturday: Ceremony</h3>
+  <h3>Saturday Ceremony</h3>
 
 - 11:30am: <br>Guests arrive and bar opens
 - 12 – 12:15pm: <br>Take your seats in the gin gang
@@ -32,7 +32,7 @@ You've been invited to Hannah (and Dan's) Special Day. This site will give you a
 </div>
 
 <div class="card flow">
-  <h3>Saturday: Evening</h3>
+  <h3>Saturday Evening</h3>
 
 - 6:30pm: <br>Evening guests arrive
 - 7:30pm: <br>Cutting of the cake, first dance, live music from The Gatenbys

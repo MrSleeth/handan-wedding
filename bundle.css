@@ -248,6 +248,11 @@ main li::before {
  background-color: var(--lightpink); 
  /* rotate: -2deg; */
 }
+
+.card h3 {
+  margin-block-start: 0;
+}
+
 /* Form styles */
 
 fieldset {
