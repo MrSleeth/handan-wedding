@@ -79,7 +79,7 @@ h1::before,
 h1::after {
   content: url("/assets/images/sunflower_2.png");
   display: inline-block;
-  width: 1em;
+  width: 1rem;
 }
 
 /* Set shorter line heights on headings and interactive elements */
