@@ -172,6 +172,12 @@ a:focus-visible {
   fill: transparent;
 }
 
+.handan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 main li {
   list-style-image: url("/assets/images/daisy_bullet.png");
 }
