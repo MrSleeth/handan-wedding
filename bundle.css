@@ -256,7 +256,7 @@ fieldset:has([type="radio"]) label {
 }
 
 legend {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 label {
