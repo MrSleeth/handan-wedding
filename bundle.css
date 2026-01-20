@@ -69,6 +69,12 @@ body {
   line-height: 1.1;
 }
 
+h1 {
+  font-size: 4em;
+  margin-block-start: 1rem;
+  text-align: center;
+}
+
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
 button, input, label,
@@ -241,11 +247,16 @@ main li {
 /* Form styles */
 
 fieldset {
-/*   display: block; */
+  border: none;
+  padding: 0;
 }
 
 fieldset:has([type="radio"]) label {
   display: inline-block;
+}
+
+legend {
+  font-size: 3.5em;
 }
 
 label {
