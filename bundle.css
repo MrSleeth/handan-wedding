@@ -258,7 +258,7 @@ main li::before {
 }
 
 @media (min-width: 700px) {
-  .card {
+  .cards {
     display: flex;
     gap: 1rem;
   }
