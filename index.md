@@ -9,7 +9,7 @@ You've been invited to Hannah (and Dan's) Special Day. This site will give you a
 
 ## What's Happening When
 
-<div class="cards">
+<div class="cards flow">
   <div class="card flow">
     <h3>Friday</h3>
 
