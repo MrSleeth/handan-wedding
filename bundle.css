@@ -170,7 +170,7 @@ nav a {
   text-decoration: none;
   background-color: var(--lightyellow);
   padding-inline: .4em;
-  outline: dashed 3px;
+  outline: dashed 2px;
   outline-offset: -5px;
   border-radius: var(--radius);
 }
@@ -290,7 +290,7 @@ main li::before {
 /* Form styles */
 
 form {
-  max-width: 800px;
+  max-width: 600px;
   margin-inline: auto;
 }
 
@@ -304,7 +304,8 @@ fieldset:has([type="radio"]) label {
 }
 
 legend {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  line-height: .7;
 }
 
 label {
@@ -314,15 +315,16 @@ label {
 [type="text"],
 textarea,
 fieldset {
-  border-color: var(--ochre);
+  border-color: var(--green);
   border-radius: 5px;
   border-width: 3px;
+  border-style: solid;
   outline: none;
   width: 100%;
 }
 
 [type="radio"] + label {
-  margin-inline-start: 1em;
+  margin-inline-start: .5em;
 }
 
 :invalid:not(:empty) {
