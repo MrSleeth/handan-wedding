@@ -165,17 +165,6 @@ a:focus-visible {
   outline-style: dashed;
 }
 
-.banner {
-  background-image: url(/assets/images/pink_banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -126px;
-}
-
-.banner path {
-  fill: transparent;
-}
-
 .handan {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
