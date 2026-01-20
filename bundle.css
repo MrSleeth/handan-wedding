@@ -175,7 +175,7 @@ a:focus-visible {
 .handan {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr max-content;
+  grid-template-rows: 1fr 1fr auto auto;
   align-items: center;
 }
 
@@ -200,6 +200,13 @@ a:focus-visible {
   z-index: 2;
 }
 
+.handan :nth-child(4) {
+  grid-row: 3;
+  grid-column: span 6;
+  margin-top: -50px;
+  z-index: 3;
+}
+
 .date {
   margin: auto;
 }
@@ -209,7 +216,7 @@ main li {
 }
 
 .cards {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   gap: 1rem;
 }
