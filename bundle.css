@@ -299,6 +299,10 @@ fieldset {
   width: 100%;
 }
 
+[type="radio"] + label {
+  margin-inline-start: 1em;
+}
+
 :invalid:not(:empty) {
   border-color: red;
 }
