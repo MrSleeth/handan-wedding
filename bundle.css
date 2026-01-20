@@ -169,15 +169,16 @@ nav > ul {
 nav a {
   text-decoration: none;
   background-color: var(--lightyellow);
+  padding-inline: .4em;
   outline: dashed 3px;
   outline-offset: -5px;
 }
 
-nav a:nth-of-type(odd) {
+nav li:nth-of-type(odd) a {
   rotate: 3deg;
 }
 
-nav a:nth-of-type(even) {
+nav li:nth-of-type(even) a {
   rotate: -4deg;
 }
 
