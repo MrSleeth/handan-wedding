@@ -54,7 +54,19 @@ async function submitHandler(request, env) {
 
   try {
     const airtableResp = await createAirtableRecord(env, reqBody);
-    return new Response.redirect("/thanks", 302);
+
+    // If the client expects JSON (e.g. fetch/ajax), return JSON so client-side can handle navigation.
+    const accept = request.headers.get("accept") || "";
+    if (accept.includes("application/json")) {
+      return new Response(JSON.stringify({ success: true, id: airtableResp.id, redirect: "/thanks" }), {
+        status: 200,
+        headers: { "Content-Type": "application/json" }
+      });
+    }
+
+    // For normal form POSTs, send a 303 See Other so the browser will perform a GET to /thanks
+    const thanksUrl = new URL("/thanks", request.url).toString();
+    return Response.redirect(thanksUrl, 303);
   } catch (err) {
     console.error("Failed to create airtable record:", err);
     return new Response("Failed to save", { status: 500 });

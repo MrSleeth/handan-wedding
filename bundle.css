@@ -193,8 +193,8 @@ a:hover,
 a:focus-visible,
 [type="text"]:focus,
 textarea:focus,
-[type="radio"] + label,
-[type="checkbox"] + label {
+[type="radio"]:focus + label,
+[type="checkbox"]:focus + label {
   background-color: var(--ochre);
   outline-offset: 3px;
   outline-width: 2px;
