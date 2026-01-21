@@ -4,7 +4,7 @@ title: RSVP
 meals:
   chicken: Sage Roasted Skin on Chicken Breast, Gratin Dauphinoise Potato, Mustard Cream Sauce
   beef: 12 Hour Low & Slow Braised Beef, Gratin Dauphinoise Potato, Red Wine Sauce
-  vegetarian: TODO
+  vegetarian: Roast Mediterranean Tart, Heritage Cherry Tomatoes, Feta, Dressed Rocket
 
 desserts:
   trio: Chocolate Brownie, Vanilla Pod Cheesecake, Tart At Citron, Berry Coulis, White Chocolate
@@ -40,17 +40,17 @@ desserts:
     <h2>Wedding Breakfast</h2>
     <fieldset>
       <legend>What would you like for your main meal?</legend>
-      <input type="radio" name="main_meal" id="main-meal-chicken" value="Chicken" required>
+      <input type="radio" name="main_meal" id="main-meal-chicken" value="Chicken" required aria-describedby="chicken">
       <label for="main-meal-chicken">Chicken</label><br>
-      <div>{{ meals.chicken }}</div>
+      <div class="meal-desc" id="chicken">{{ meals.chicken }}</div>
 
-      <input type="radio" name="main_meal" id="main-meal-beef" value="Beef" required>
+      <input type="radio" name="main_meal" id="main-meal-beef" value="Beef" required aria-describedby="beef">
       <label for="main-meal-beef">Slow Cooked Beef</label><br>
-      <div>{{ meals.beef }}</div>
+      <div class="meal-desc" id="beef">{{ meals.beef }}</div>
 
-      <input type="radio" name="main_meal" id="main-meal-tart" value="Veggie" required>
+      <input type="radio" name="main_meal" id="main-meal-tart" value="Veggie" required aria-describedby="veg">
       <label for="main-meal-tart">Mediterranean Tart (v)</label><br>
-      <div>{{ meals.vegetarian }}</div>
+      <div class="meal-desc" id="veg">{{ meals.vegetarian }}</div>
 
       <input type="radio" name="main_meal" id="main-meal-kids" value="Kids" required>
       <label for="main-meal-kids">Fish Fingers (children)</label>
@@ -60,17 +60,17 @@ desserts:
 
     <fieldset>
       <legend>What would you like for dessert?</legend>
-      <input type="radio" name="dessert" id="dessert-trio" value="Trio" required>
+      <input type="radio" name="dessert" id="dessert-trio" value="Trio" required aria-describedby="trio">
       <label for="dessert-trio">Northside Trio</label><br>
-      <div>{{ dessert.trio }}</div>
+      <div class="meal-desc" id="trio">{{ desserts.trio }}</div>
 
-      <input type="radio" name="dessert" id="dessert-stp" value="STP" required>
+      <input type="radio" name="dessert" id="dessert-stp" value="STP" required aria-describedby="stp">
       <label for="dessert-stp">Sticky Toffee Pudding</label><br>
-      <div>{{ dessert.stp }}</div>
+      <div class="meal-desc" id="stp">{{ desserts.stp }}</div>
 
-      <input type="radio" name="dessert" id="dessert-posset" value="Posset" required>
+      <input type="radio" name="dessert" id="dessert-posset" value="Posset" required aria-describedby="posset">
       <label for="dessert-posset">Lemon Posset</label><br>
-      <div>{{ dessert.posset }}</div>
+      <div class="meal-desc" id="posset">{{ desserts.posset }}</div>
 
       <input type="radio" name="dessert" id="dessert-kids" value="Kids" required>
       <label for="dessert-3">Ice Cream (children)</label>
