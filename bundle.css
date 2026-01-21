@@ -6,6 +6,7 @@
   --green: #97a772;
   --orange: #d87030;
   --blue: #81afcd;
+  --bodytext: hsl(204, 70%, 5%);
   --flow-space: 1.5em;
   --radius: 5px;
 }
@@ -149,7 +150,7 @@ html {
 
 body {
   background-color: var(--blue);
-  color: hsl(204, 70%, 5%);
+  color: var(--bodytext, black);
   font-size: 2.5em;
   /* border: dashed 4px currentColor;
   border-radius: var(--radius); */
@@ -189,7 +190,11 @@ nav li:nth-of-type(even) a {
 } */
 
 a:hover,
-a:focus-visible {
+a:focus-visible,
+[type="text"]:focus,
+textarea:focus,
+[type="radio"] + label,
+[type="checkbox"] + label {
   background-color: var(--ochre);
   outline-offset: 3px;
   outline-width: 2px;
@@ -239,6 +244,8 @@ a:focus-visible {
 
 main {
   margin-block-start: 1.5rem;
+  max-width: 70ch;
+  margin-inline: auto;
 }
 
 main li::before {
@@ -298,6 +305,7 @@ form {
 fieldset {
   border: none;
   padding: 0;
+  width: 100%;
 }
 
 [type="radio"] + label,
@@ -325,8 +333,7 @@ label {
 }
 
 [type="text"],
-textarea,
-fieldset {
+textarea {
   border-color: currentColor;
   border-radius: 5px;
   border-width: 3px;
@@ -342,6 +349,7 @@ input:invalid:not(:empty) {
 button {
   appearance: none;
   background-color: var(--lightyellow);
+  color: var(--bodytext, black);
   padding: .5rem 3rem;
   border-radius: var(--radius);
   border: solid 2px currentColor;
