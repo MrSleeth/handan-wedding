@@ -1,6 +1,15 @@
 ---
 layout: main.njk
 title: RSVP
+meals:
+  chicken: Sage Roasted Skin on Chicken Breast, Gratin Dauphinoise Potato, Mustard Cream Sauce
+  beef: 12 Hour Low & Slow Braised Beef, Gratin Dauphinoise Potato, Red Wine Sauce
+  vegetarian: TODO
+
+desserts:
+  trio: Chocolate Brownie, Vanilla Pod Cheesecake, Tart At Citron, Berry Coulis, White Chocolate
+  stp: Sticky Toffee Pudding, Butterscotch Sauce, Fresh Cream
+  posset: Lemon Posset, Berry Compote, Shortbread, Meringue
 ---
 <form method="POST" action="/api/submit" class="flow">
   <div class="input">
@@ -31,18 +40,41 @@ title: RSVP
     <h2>Wedding Breakfast</h2>
     <fieldset>
       <legend>What would you like for your main meal?</legend>
-      <input type="radio" name="main_meal" id="main-meal-chicken" value="Chicken" required><label for="main-meal-chicken">Chicken</label><br>
-      <input type="radio" name="main_meal" id="main-meal-beef" value="Beef" required><label for="main-meal-beef">Slow Cooked Beef</label><br>
-      <input type="radio" name="main_meal" id="main-meal-tart" value="Veggie" required><label for="main-meal-tart">Mediterranean Tart (v)</label><br>
-      <input type="radio" name="main_meal" id="main-meal-kids" value="Kids" required><label for="main-meal-kids">Fish Fingers (children)</label>
+      <input type="radio" name="main_meal" id="main-meal-chicken" value="Chicken" required>
+      <label for="main-meal-chicken">Chicken</label><br>
+      <div>{{ meals.chicken }}</div>
+
+      <input type="radio" name="main_meal" id="main-meal-beef" value="Beef" required>
+      <label for="main-meal-beef">Slow Cooked Beef</label><br>
+      <div>{{ meals.beef }}</div>
+
+      <input type="radio" name="main_meal" id="main-meal-tart" value="Veggie" required>
+      <label for="main-meal-tart">Mediterranean Tart (v)</label><br>
+      <div>{{ meals.vegetarian }}</div>
+
+      <input type="radio" name="main_meal" id="main-meal-kids" value="Kids" required>
+      <label for="main-meal-kids">Fish Fingers (children)</label>
+
+
     </fieldset>
 
     <fieldset>
       <legend>What would you like for dessert?</legend>
-      <input type="radio" name="dessert" id="dessert-trio" value="Trio" required><label for="dessert-trio">Northside Trio</label><br>
-      <input type="radio" name="dessert" id="dessert-stp" value="STP" required><label for="dessert-stp">Sticky Toffee Pudding</label><br>
-      <input type="radio" name="dessert" id="dessert-posset" value="Posset" required><label for="dessert-posset">Lemon Posset</label><br>
-      <input type="radio" name="dessert" id="dessert-kids" value="Kids" required><label for="dessert-3">Ice Cream (children)</label>
+      <input type="radio" name="dessert" id="dessert-trio" value="Trio" required>
+      <label for="dessert-trio">Northside Trio</label><br>
+      <div>{{ dessert.trio }}</div>
+
+      <input type="radio" name="dessert" id="dessert-stp" value="STP" required>
+      <label for="dessert-stp">Sticky Toffee Pudding</label><br>
+      <div>{{ dessert.stp }}</div>
+
+      <input type="radio" name="dessert" id="dessert-posset" value="Posset" required>
+      <label for="dessert-posset">Lemon Posset</label><br>
+      <div>{{ dessert.posset }}</div>
+
+      <input type="radio" name="dessert" id="dessert-kids" value="Kids" required>
+      <label for="dessert-3">Ice Cream (children)</label>
+
     </fieldset>
     <div>
       <label for="dietary">Let us know if you have any dietary requirements</label>
@@ -55,7 +87,7 @@ title: RSVP
     </div>
   </div>
 
-  <div hidden id="misc">
+  <div id="misc">
     <label for="more-info">Is there anything else we need to know?</label>
     <textarea name="more_info" id="more-info" rows="5"></textarea>
   </div>
