@@ -300,8 +300,15 @@ fieldset {
   padding: 0;
 }
 
-fieldset:has([type="radio"]) label {
+[type="radio"] + label,
+[type="checkbox"] + label {
   display: inline-block;
+  margin-inline-start: .5em;
+}
+
+[type="checkbox"] {
+  width: 1em;
+  height: 1em;
 }
 
 legend {
@@ -322,10 +329,6 @@ fieldset {
   border-style: solid;
   outline: none;
   width: 100%;
-}
-
-[type="radio"] + label {
-  margin-inline-start: .5em;
 }
 
 input:invalid:not(:empty) {

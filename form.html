@@ -10,24 +10,24 @@ title: RSVP
 
   <fieldset>
     <legend>Are you coming?</legend>
-    <input type="radio" name="rsvp" id="yes" value="Coming" required><label for="yes">Yes! Can't wait.</label><br>
-    <input type="radio" name="rsvp" id="no" value="Not Coming" required><label for="no">Sorry, no.</label>
+    <input type="radio" name="rsvp" id="yes" value="Coming" required><label for="yes">Yes! Can't wait</label><br>
+    <input type="radio" name="rsvp" id="no" value="Not Coming" required><label for="no">Sorry, no</label>
   </fieldset>
 
-  <fieldset>
+  <fieldset hidden id="guest-type">
     <legend>When are you coming?</legend>
     <input type="radio" name="guest_type" id="guest-type-all" value="All" required><label for="guest-type-all">The whole 3 days!</label><br>
     <input type="radio" name="guest_type" id="guest-type-day" value="Ceremony" required><label for="guest-type-day">The Ceremony</label><br>
     <input type="radio" name="guest_type" id="guest-type-evening" value="Evening" required><label for="guest-type-evening">The Evening Do</label>
   </fieldset>
 
-  <fieldset>
+  <fieldset hidden id="sunday">
     <legend>Will you be attending the Sunday Funday</legend>
     <input type="radio" name="sunday" id="sunday-yes" value="Yes" required><label for="sunday-yes">Yes</label><br>
     <input type="radio" name="sunday" id="sunday-no" value="No" required checked><label for="sunday-no">No</label>
   </fieldset>
 
-  <div class="flow">
+  <div class="flow" id="meal">
     <h2>Wedding Breakfast</h2>
     <fieldset>
       <legend>What would you like for your main meal?</legend>
@@ -44,19 +44,18 @@ title: RSVP
       <input type="radio" name="dessert" id="dessert-posset" value="Posset" required><label for="dessert-posset">Lemon Posset</label><br>
       <input type="radio" name="dessert" id="dessert-kids" value="Kids" required><label for="dessert-3">Ice Cream (children)</label>
     </fieldset>
+    <div>
+      <label for="dietary">Let us know if you have any dietary requirements</label>
+      <input type="text" id="dietary" name="dietary">
+    </div>
+  
+    <div>
+      <input type="checkbox" id="non-drinker" name="non_drinker" value="Non-drinker">
+      <label for="non-drinker">I'm a non-drinker</label>
+    </div>
   </div>
 
-  <div>
-    <label for="dietary">Let us know if you have any dietary requirements</label>
-    <input type="text" id="dietary" name="dietary">
-  </div>
-
-  <div>
-    <label for="non-drinker">Non-drinker?</label>
-    <input type="checkbox" id="non-drinker" name="non_drinker" value="Non-drinker">
-  </div>
-
-  <div>
+  <div hidden id="misc">
     <label for="more-info">Is there anything else we need to know?</label>
     <textarea name="more_info" id="more-info" rows="5"></textarea>
   </div>
