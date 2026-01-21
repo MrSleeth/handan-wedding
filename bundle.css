@@ -342,3 +342,15 @@ button {
   border-radius: 5px;
   font-size: 1.5em;
 }
+
+/* Form "logic" */
+
+form:has(#yes:checked) #guest-type,
+form:has(#yes:checked) #sunday {
+  display: block;
+}
+
+form:has(#guest-type-all:checked) #meal,
+form:has(#guest-type-day:checked) #meal {
+  display: block;
+} 
