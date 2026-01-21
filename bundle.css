@@ -312,8 +312,12 @@ fieldset {
 }
 
 legend {
-  font-size: 1.2em;
+  font-size: 1.2;
+}
+
+legend, label {
   line-height: .7;
+  margin-block-end: .5em;
 }
 
 label {
@@ -323,7 +327,7 @@ label {
 [type="text"],
 textarea,
 fieldset {
-  border-color: var(--blue);
+  border-color: currentColor;
   border-radius: 5px;
   border-width: 3px;
   border-style: solid;
@@ -337,10 +341,12 @@ input:invalid:not(:empty) {
 
 button {
   appearance: none;
-  background-color: var(--green);
-  padding: 2rem 5rem;
-  border-radius: 5px;
+  background-color: var(--lightyellow);
+  padding: .5rem 3rem;
+  border-radius: var(--radius);
+  border: solid 2px currentColor;
   font-size: 1.5em;
+  margin-inline: auto;
 }
 
 /* Form "logic" */

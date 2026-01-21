@@ -54,10 +54,7 @@ async function submitHandler(request, env) {
 
   try {
     const airtableResp = await createAirtableRecord(env, reqBody);
-    return new Response(JSON.stringify({ success: true, id: airtableResp.id }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" }
-    });
+    return new Response.redirect("/thanks", 302);
   } catch (err) {
     console.error("Failed to create airtable record:", err);
     return new Response("Failed to save", { status: 500 });
