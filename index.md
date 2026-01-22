@@ -4,7 +4,7 @@ title: Welcome!
 bar_open: 7
 bar_closed: 10
 belltents:
-  url: poshbells.co.uk
+  url: https://poshbells.co.uk
   name: Posh Bells
 ---
 
@@ -70,7 +70,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 
 ### Glamping Pods
 
-Our __VIP guests__ have been assigned one of the 10 glamping pods on the site and you should already know if you have been allocated one or not. Pods are £200 for the whole weekend, please pay Han and Dan directly.
+Our __VIP guests__ have been assigned one of the 10 glamping pods on the site and you should already know if you have been allocated one or not. Pods are £200 for the whole weekend, please [pay Han and Dan](https://monzo.me/danielandrewsleeth/200.00?h=snd7qj&d=Glamping%20pods) directly.
 
 More information on the pods can be found in this handy [Glamping Pods PDF](/assets/pods.pdf)
 
