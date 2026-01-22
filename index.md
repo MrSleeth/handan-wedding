@@ -5,7 +5,7 @@ bar_open: 7
 bar_closed: 10
 ---
 
-You've been invited to Hannah (and Dan's) Special Day. This site will give you all the information you need
+You've been invited to Hannah (and Dan's) Special Day, taking place from Friday, 3rd April until Monday, 6th April at Northside Farm, Horsley. This site will give you all the information you need
 
 ## What's Happening When
 
@@ -51,12 +51,16 @@ You've been invited to Hannah (and Dan's) Special Day. This site will give you a
 
 ### Glamping Pods
 
+Our _VIP guests_ have been assigned one of the 10 glamping pods on the site and you should already know if you have been allocated one or not. Pods are £200 for the whole weekend, please pay Han and Dan directly.
 
+More information on the pods can be found in this handy (Glamping Pods PDF)[/assets/pods.pdf]
 
 ### Bell Tents
 
-
+If you'd like to camp, bell tents are available from (BELL TENT LINK)["google.com"]. Please contact Han and Dan directly if you would like to know more.
 
 ## Getting There
 
-The whole weekend takes place at Northside Farm, Horsley
+The whole weekend takes place at: <br> Northside Farm<br>
+Horsley<br>
+NE15 0LZ
