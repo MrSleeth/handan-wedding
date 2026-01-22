@@ -9,5 +9,6 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/fonts");
 	eleventyConfig.addPassthroughCopy("assets/images");
 	eleventyConfig.addPassthroughCopy("assets/*.pdf");
+	eleventyConfig.addPassthroughCopy("assets/favicons/*");
 	eleventyConfig.addPlugin(IdAttributePlugin);
 };
