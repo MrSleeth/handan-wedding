@@ -1,3 +1,5 @@
+import { IdAttributePlugin } from "@11ty/eleventy";
+
 export default async function (eleventyConfig) {
 	// Reset to this value
 	// eleventyConfig.setTemplateFormats("njk, liquid, html");
