@@ -248,12 +248,19 @@ main {
   margin-inline: auto;
 }
 
-main li::before {
-  /* list-style-image: url("/assets/images/daisy_bullet.png"); */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li::before {
   content: "";
   width: 1rem;
-  height:fit-content;
+  height: 1rem;
   background-image: url("/assets/images/daisy_bullet.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card {
@@ -274,6 +281,7 @@ main li::before {
 
 .card:nth-of-type(1) {
  background-color: var(--ochre); 
+ grid-column: span 4;
  /* rotate: -1deg; */
 }
 
@@ -290,6 +298,7 @@ main li::before {
 .card:nth-of-type(4) {
  background-color: var(--pink); 
  /* rotate: -2deg; */
+ grid-column: span 4;
 }
 
 .card h3 {

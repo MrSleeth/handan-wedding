@@ -12,8 +12,8 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 
 ## What's Happening When
 
-<div class="cards flow">
-  <div class="card flow">
+<div class="cards">
+  <div class="card">
     <h3>Friday</h3>
 
 - 5pm: <br>The weekend kicks off. Those with glamping pods and teepees can arrive and get settled in
@@ -22,7 +22,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 - {{ bar_closed }}pm: <br>Bar closes — go get your beauty sleep 
   </div>
 
-<div class="card flow">
+<div class="card">
   <h3>Saturday Ceremony</h3>
 
 - 11:30am: <br>Guests arrive and bar opens
@@ -34,7 +34,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 - 3:30pm – 5:30pm: <br>Wedding breakfast
 </div>
 
-<div class="card flow">
+<div class="card">
   <h3>Saturday Evening</h3>
 
 - 6:30pm: <br>Evening guests arrive
@@ -45,7 +45,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 - 12am: <br>Bar closes
 </div>
 
-<div class="card flow">
+<div class="card">
   <h3>Sunday Funday</h3>
 
   <p>
