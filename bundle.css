@@ -282,12 +282,13 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto auto;
     gap: 1rem;
+    margin-block-start: 1.5em;
   }
 
 
 .card:nth-of-type(1) {
  background-color: var(--ochre); 
- grid-column: span 4;
+ /* grid-column: span 4; */
  /* rotate: -1deg; */
 }
 
@@ -304,7 +305,7 @@ main {
 .card:nth-of-type(4) {
  background-color: var(--pink); 
  /* rotate: -2deg; */
- grid-column: span 4;
+ /* grid-column: span 4; */
 }
 
 .card h3 {
