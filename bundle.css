@@ -196,7 +196,8 @@ a:focus-visible,
 textarea:focus,
 [type="radio"]:focus + label,
 [type="checkbox"]:focus + label {
-  background-color: var(--ochre);
+  background-color: var(--bodytext);
+  color: var(--lightyellow);
   outline-offset: 3px;
   outline-width: 2px;
   outline-style: dashed;
@@ -244,7 +245,7 @@ textarea:focus,
 }
 
 main {
-  margin-block-start: 3.5rem;
+  margin-block-start: 5rem;
   max-width: 70ch;
   margin-inline: auto;
 }
@@ -266,7 +267,7 @@ main {
 }
 
 .card li {
-  margin-block-start: 1rem;
+  margin-block-start: 1.5em;
 }
 
 .card {
