@@ -5,7 +5,7 @@ meals:
   chicken: Sage Roasted Skin on Chicken Breast, Gratin Dauphinoise Potato, Mustard Cream Sauce
   beef: 12 Hour Low & Slow Braised Beef, Gratin Dauphinoise Potato, Red Wine Sauce
   vegetarian: Roast Mediterranean Tart, Heritage Cherry Tomatoes, Feta, Dressed Rocket
-  gluten: GLUTEN FREE GUESTS ONLY. Moroccan Spiced Vegetable Tagine, Rice
+  gluten: GLUTEN FREE VEGETARIAN GUESTS ONLY. Moroccan Spiced Vegetable Tagine, Rice
 
 desserts:
   trio: Chocolate Brownie, Vanilla Pod Cheesecake, Tart At Citron, Berry Coulis, White Chocolate
@@ -27,7 +27,7 @@ desserts:
   <fieldset hidden id="guest-type">
     <legend>When are you coming?</legend>
     <input type="radio" name="guest_type" id="guest-type-all" value="All"><label for="guest-type-all">The whole 3 days!</label><br>
-    <input type="radio" name="guest_type" id="guest-type-day" value="Ceremony"><label for="guest-type-day">The Ceremony</label><br>
+    <input type="radio" name="guest_type" id="guest-type-day" value="Ceremony"><label for="guest-type-day">The Ceremony / Daytime</label><br>
     <input type="radio" name="guest_type" id="guest-type-evening" value="Evening"><label for="guest-type-evening">The Evening Do</label>
   </fieldset>
 
@@ -42,11 +42,11 @@ desserts:
     <fieldset>
       <legend>What would you like for your main meal?</legend>
       <input type="radio" name="main_meal" id="main-meal-chicken" value="Chicken"  aria-describedby="chicken">
-      <label for="main-meal-chicken">Chicken</label><br>
+      <label for="main-meal-chicken">Chicken (gf)</label><br>
       <div class="meal-desc" id="chicken">{{ meals.chicken }}</div>
 
       <input type="radio" name="main_meal" id="main-meal-beef" value="Beef"  aria-describedby="beef">
-      <label for="main-meal-beef">Slow Cooked Beef</label><br>
+      <label for="main-meal-beef">Slow Cooked Beef (gf)</label><br>
       <div class="meal-desc" id="beef">{{ meals.beef }}</div>
 
       <input type="radio" name="main_meal" id="main-meal-tart" value="Veggie"  aria-describedby="veg">
