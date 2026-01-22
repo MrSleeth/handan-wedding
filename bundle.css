@@ -144,10 +144,6 @@ textarea:not([rows]) {
   left: 1em;
 }
 
-html {
-  /* margin: 3rem; */
-}
-
 body {
   background-color: var(--blue);
   color: var(--bodytext, black);
@@ -201,6 +197,11 @@ textarea:focus,
   outline-offset: 3px;
   outline-width: 2px;
   outline-style: dashed;
+}
+
+[type="text"]:focus,
+textarea:focus {
+  background-color: #fff;
 }
 
 .handan {

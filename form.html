@@ -5,6 +5,7 @@ meals:
   chicken: Sage Roasted Skin on Chicken Breast, Gratin Dauphinoise Potato, Mustard Cream Sauce
   beef: 12 Hour Low & Slow Braised Beef, Gratin Dauphinoise Potato, Red Wine Sauce
   vegetarian: Roast Mediterranean Tart, Heritage Cherry Tomatoes, Feta, Dressed Rocket
+  gluten: GLUTEN FREE GUESTS ONLY: Moroccan Spiced Vegetable Tagine, Rice
 
 desserts:
   trio: Chocolate Brownie, Vanilla Pod Cheesecake, Tart At Citron, Berry Coulis, White Chocolate
@@ -52,6 +53,10 @@ desserts:
       <label for="main-meal-tart">Mediterranean Tart (v)</label><br>
       <div class="meal-desc" id="veg">{{ meals.vegetarian }}</div>
 
+      <input type="radio" name="main_meal" id="main-meal-gluten" value="Gluten"  aria-describedby="gluten">
+      <label for="main-meal-gluten">Spiced Tagine (v, gf)</label><br>
+      <div class="meal-desc" id="gluten">{{ meals.gluten }}</div>
+
       <input type="radio" name="main_meal" id="main-meal-kids" value="Kids" >
       <label for="main-meal-kids">Fish Fingers (children)</label>
 
@@ -88,7 +93,7 @@ desserts:
   </div>
 
   <div id="misc">
-    <label for="more-info">Is there anything else we need to know?</label>
+    <label for="more-info">Is there anything else we need to know? Evening guests, please add dietary requirements</label>
     <textarea name="more_info" id="more-info" rows="5"></textarea>
   </div>
 
