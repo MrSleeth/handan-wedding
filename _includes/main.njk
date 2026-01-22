@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bundle.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/favicon-180x180.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicons/favicon-512x512.png">
+  <title>Hannah's Special Day (featuring Dan)</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <div class="handan">
+      <img src="/assets/images/yellow_box_-_hannah_copy.png" alt="Han">
+      <span>&</span>
+      <img src="/assets/images/orange_box_-_dan.png" alt="Dan">
+      <img src="/assets/images/pink_banner.png" alt="">
+    </div>
+    <img src="/assets/images/heart_with_date.png" alt="Saturday, 4th April 2026" class="date">
+  </header>
+  <nav aria-label="site">
+      <ul role="list">
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/#whats-happening-when">What's happening when?</a></li>
+        <li><a href="/#camping-info">Camping info</a></li>
+        <li><a href="/form">RSVP</a></li>
+        <li><a href="/#getting-there">Getting there</a></li>
+      </ul>
+    </nav>
+  <main id="main flow">
+    <h1>{{ title }}</h1>
+    
+    {{ content | safe }}
+  </main>
+</body>
+</html>

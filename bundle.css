@@ -1,0 +1,399 @@
+:root {
+  --ochre: #eeaa1f;
+  --lightyellow: #f1e970;
+  --lightpink: #e9c0c5;
+  --pink: #d46c86;
+  --green: #97a772;
+  --orange: #d87030;
+  --blue: #81afcd;
+  --bodytext: hsl(204, 70%, 5%);
+  --flow-space: 1.5em;
+  --radius: 5px;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'new_york_bakery_capsthick';
+    src: url('/assets/fonts/newyorkbakerycaps-thick-webfont.woff2') format('woff2'),
+         url('/assets/fonts/newyorkbakerycaps-thick-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: 'new_york_bakery_scriptmedium';
+    src: url('/assets/fonts/newyorkbakeryscript-medium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/newyorkbakeryscript-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    text-transform: uppercase;
+}
+
+/* Reset ℅: https://piccalil.li/blog/a-more-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: "new_york_bakery_capsthick", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-block-start: 1rem;
+  text-align: center;
+}
+
+/* h1::before,
+h1::after {
+  content: url("/assets/images/sunflower_2.png");
+  display: inline-block;
+  width: 1rem;
+} */
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label,
+nav {
+  line-height: .7;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: var(--orange, currentColor);
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+
+/* Global styles */
+
+.skip-link {
+  display: none;
+}
+
+.skip-link:focus {
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--bodytext, black);
+  font-size: 2.5em;
+  /* border: dashed 4px currentColor;
+  border-radius: var(--radius); */
+  padding: 1rem;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6em;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: var(--lightyellow);
+  padding-inline: .4em;
+  outline: dashed 2px;
+  outline-offset: -5px;
+  border-radius: var(--radius);
+  color: var(--bodytext) !important;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--pink);
+}
+
+/* nav li:nth-of-type(odd) a {
+  rotate: 3deg;
+}
+
+nav li:nth-of-type(even) a {
+  rotate: -4deg;
+} */
+
+a:hover,
+a:focus-visible,
+[type="text"]:focus,
+textarea:focus,
+[type="radio"]:focus + label,
+[type="checkbox"]:focus + label {
+  background-color: var(--bodytext);
+  color: var(--lightyellow);
+  outline-offset: 3px;
+  outline-width: 2px;
+  outline-style: dashed;
+}
+
+[type="text"]:focus,
+textarea:focus {
+  background-color: #fff;
+}
+
+.handan {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr auto auto;
+  align-items: center;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.handan :nth-child(1) {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 2;
+  align-self: start;
+}
+
+.handan :nth-child(2) {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  line-height: 1;
+  align-self: center;
+  justify-self: end;
+  font-size: 3.5rem;
+}
+
+.handan :nth-child(3) {
+  grid-column: 4 / -1;
+  grid-row: 2;
+  z-index: 2;
+}
+
+.handan :nth-child(4) {
+  grid-row: 3;
+  grid-column: span 6;
+  margin-top: -50px;
+  z-index: 3;
+}
+
+.date {
+  margin: auto;
+}
+
+main {
+  margin-block-start: 5rem;
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-block-start: 1em;
+}
+
+.card li::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/assets/images/daisy_bullet.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card li {
+  margin-block-start: 1.5em;
+}
+
+.card {
+  padding: 1.5em;
+  border-radius: var(--radius);
+  outline: dashed 4px currentColor;
+  outline-offset: -10px;
+}
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-block-start: 1.5em;
+  }
+
+
+.card:nth-of-type(1) {
+ background-color: var(--ochre); 
+ /* grid-column: span 4; */
+ /* rotate: -1deg; */
+}
+
+.card:nth-of-type(2) {
+ background-color: var(--lightyellow); 
+ /* rotate: 1deg; */
+}
+
+.card:nth-of-type(3) {
+ background-color: var(--lightpink); 
+ /* rotate: -2deg; */
+}
+
+.card:nth-of-type(4) {
+ background-color: var(--pink); 
+ /* rotate: -2deg; */
+ /* grid-column: span 4; */
+}
+
+.card h3 {
+  margin-block-start: 0;
+}
+
+/* Form styles */
+
+form {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+[type="radio"] + label,
+[type="checkbox"] + label {
+  display: inline-block;
+  margin-inline-start: .5em;
+}
+
+[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+}
+
+legend {
+  font-size: 1.2;
+}
+
+legend, label {
+  line-height: .7;
+  margin-block-end: .5em;
+}
+
+label {
+  display: block;
+}
+
+[type="text"],
+textarea {
+  border-color: currentColor;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  outline: none;
+  width: 100%;
+}
+
+input:invalid:not(:empty) {
+  border-color: red;
+}
+
+button {
+  appearance: none;
+  background-color: var(--lightyellow);
+  color: var(--bodytext, black);
+  padding: .5rem 3rem;
+  border-radius: var(--radius);
+  border: solid 2px currentColor;
+  font-size: 1.5em;
+  margin-inline: auto;
+}
+
+/* Form "logic" */
+
+form:has(#yes:checked) #guest-type,
+form:has(#yes:checked) #sunday {
+  display: block;
+}
+
+form:has(#guest-type-all:checked) #meal,
+form:has(#guest-type-day:checked) #meal {
+  display: block;
+} 
+
+.meal-desc {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-inline-start: 3rem;
+  margin-block-start: .5em;
+  margin-block-end: 2rem;
+}
