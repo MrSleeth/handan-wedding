@@ -56,7 +56,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 
 Our __VIP guests__ have been assigned one of the 10 glamping pods on the site and you should already know if you have been allocated one or not. Pods are £200 for the whole weekend, please pay Han and Dan directly.
 
-More information on the pods can be found in this handy (Glamping Pods PDF)[/assets/pods.pdf]
+More information on the pods can be found in this handy [Glamping Pods PDF](/assets/pods.pdf)
 
 ### Bell Tents
 
