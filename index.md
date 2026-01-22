@@ -4,8 +4,8 @@ title: Welcome!
 bar_open: 7
 bar_closed: 10
 belltents:
-  url: google.com
-  name: BELL TENTS
+  url: poshbells.co.uk
+  name: Posh Bells
 ---
 
 You've been invited to Hannah (and Dan's) Special Day, taking place from Friday, 3rd April until Monday, 6th April at Northside Farm, Horsley. This site will give you all the information you need
@@ -47,6 +47,22 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 
 <div class="card flow">
   <h3>Sunday Funday</h3>
+
+  <p>
+    Bring your picnics and your little ones and join us back at Northside Farm for our Family Fun Day<sup>*</sup>, featuring:
+  </p>
+
+  - Rory's Football Tournament
+  - Bouncy castle
+  - Ice cream!
+  - Zip lines
+  - Mario Kart
+  - Lawn games
+  - Board games
+  - Bar open from 12pm to 7pm (still not on us, sorry)
+
+
+  <small><sup>*</sup>Han and Dan cannot be held liable for the amount of fun had during the day.</small>
 </div>
 </div>
 
