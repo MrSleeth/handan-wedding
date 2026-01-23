@@ -76,7 +76,7 @@ More information on the pods can be found in this handy [Glamping Pods PDF](/ass
 
 ### Bell Tents
 
-If you'd like to camp, bell tents are available from [{{ belltents.name}}]("{{ belltents.url }}"). Please contact Han and Dan directly if you would like to know more.
+If you'd like to camp, bell tents are available from [{{ belltents.name}}]({{ belltents.url }}). Please contact Han and Dan directly if you would like to know more.
 
 ## Getting There
 
