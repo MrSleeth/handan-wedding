@@ -1,4 +1,5 @@
 import { IdAttributePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default async function (eleventyConfig) {
 	// Reset to this value
@@ -11,4 +12,5 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/*.pdf");
 	eleventyConfig.addPassthroughCopy("assets/favicons/*");
 	eleventyConfig.addPlugin(IdAttributePlugin);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 };
