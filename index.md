@@ -72,11 +72,15 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 
 Our __VIP guests__ have been assigned one of the 10 glamping pods on the site and you should already know if you have been allocated one or not. Pods are £200 for the whole weekend, please [pay Han and Dan](https://monzo.me/danielandrewsleeth/200.00?h=snd7qj&d=Glamping%20pods) directly.
 
-More information on the pods can be found in this handy [Glamping Pods PDF](/assets/pods.pdf)
+You can [read key information about the Glamping Pods](/pods.html) or download this handy [Glamping Pods PDF](/assets/pods.pdf).
 
 ### Bell Tents
 
 If you'd like to camp, bell tents are available from [{{ belltents.name}}]("{{ belltents.url }}"). Please contact Han and Dan directly if you would like to know more.
+
+## Gifts
+
+We don't expect any gifts but if you would like to contribute to our family getaway fund then all donations would be very gratefully receieved.
 
 ## Getting There
 
