@@ -41,7 +41,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 - 7:30pm - <br>Cutting of the cake, first dance, live music from The Gatenbys
 - 8:30pm - <br>Evening food is served
 - 9pm – 10pm - <br>More live music
-- 11pm - : <br>Music and dancing
+- 11pm - <br>Music and dancing
 - 12am - <br>Bar closes
 </div>
 
@@ -49,16 +49,16 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
   <h3>Sunday Funday</h3>
 
   <p>
-    Bring your picnics and your little ones and join us back at Northside Farm for our Family Fun Day<sup>*</sup>, featuring:
+    Bring your picnics and your little ones and join us back at Northside Farm for our Family Fun Day<sup>*</sup>, featuring –
   </p>
 
-  - Rory's Football Tournament
-  - Bouncy castle
+  - Rory's Football Tournament!
+  - Bouncy castle!
   - Ice cream!
-  - Zip lines
-  - Mario Kart
-  - Lawn games
-  - Board games
+  - Zip lines!
+  - Mario Kart!
+  - Lawn games!
+  - Board games!
   - Bar open from 12pm to 7pm (still not on us, sorry)
 
 
@@ -77,6 +77,10 @@ More information on the pods can be found in this handy [Glamping Pods PDF](/ass
 ### Bell Tents
 
 If you'd like to camp, bell tents are available from [{{ belltents.name}}]({{ belltents.url }}). Please contact Han and Dan directly if you would like to know more.
+
+## Gifts
+
+We’re thrilled that you're coming to celebrate our wedding with us and don’t expect any gifts but if you'd like to donate to our family honeymoon fund then all donations would be gratefully received. 
 
 ## Getting There
 
