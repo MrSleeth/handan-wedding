@@ -1,0 +1,10 @@
+---
+layout: main.njk
+title: Photo Booth
+---
+
+<form method="POST" action="/api/upload" enctype="multipart/form-data" class="flow">
+    <label for="photo-upload">Upload your photos from the wedding!</label>
+    <input type="file" id="photo-upload" name="photo-upload" accept="image/*" multiple>
+    <button type="submit">Submit Photos</button>
+</form>
