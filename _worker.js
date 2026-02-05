@@ -85,7 +85,7 @@ export default {
         // IMPORTANT: return the response from submitHandler
         return await submitHandler(request, env);
       }
-      else if (url.pathname === "/api/photos") {
+      else if (url.pathname === "/api/photos" || url.pathname === "/api/photos/") {
         // PUT: Store the request body in R2
         if (request.method === "PUT") {
           await env.MY_BUCKET.put(key, request.body);
