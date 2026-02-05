@@ -76,6 +76,7 @@ async function submitHandler(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const key = url.pathname.slice(1);
 
     if (url.pathname.startsWith("/api/")) {
       console.log("API", url.pathname);
@@ -83,6 +84,19 @@ export default {
         console.log("SUBMIT");
         // IMPORTANT: return the response from submitHandler
         return await submitHandler(request, env);
+      }
+      else if (url.pathname === "/api/photos") {
+        // PUT: Store the request body in R2
+        if (request.method === "PUT") {
+          await env.MY_BUCKET.put(key, request.body);
+          return new Response(`Put ${key} successfully!`);
+        }
+
+        // GET: Retrieve the object from R2
+        const object = await env.MY_BUCKET.get(key);
+        if (object === null) {
+          return new Response("Object not found", { status: 404 });
+        }
       }
       return new Response("Not found..?", { status: 404 });
     }
