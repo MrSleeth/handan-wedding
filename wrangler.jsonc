@@ -1,8 +1,0 @@
-{
-  "r2_buckets": [
-    {
-      "binding": "MY_BUCKET",
-      "bucket_name": "wedding-photos"
-    }
-  ]
-}
