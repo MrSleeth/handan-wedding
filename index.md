@@ -61,12 +61,13 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
   - Board games!
   - Bar open from 12pm to 7pm (still not on us, sorry)
 
-
   <small><sup>*</sup>Han and Dan cannot be held liable for the amount of fun had during the day.</small>
 </div>
 </div>
 
 ## Camping Info
+
+For those staying for the whole weekend, _checkout is 12pm on Monday._
 
 ### Glamping Pods
 
