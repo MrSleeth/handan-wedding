@@ -399,8 +399,8 @@ form:has(#guest-type-day:checked) #meal {
 }
 
 dialog {
-  width: 60vw;
-  height: 60vw;
+  width: max-content;
+  height: 80dvh;
   background-color: var(--lightpink) !important;
   border: none;
   box-shadow: 0 0 5px 5px rgba(0,0,0,.4);
