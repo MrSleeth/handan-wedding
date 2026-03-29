@@ -8,7 +8,7 @@ belltents:
   name: Posh Bells
 ---
 
-You've been invited to Hannah (and Dan's) Special Day, taking place from Friday, 3rd April until Monday, 6th April at Northside Farm, Horsley. This site will give you all the information you need
+You've been invited to Hannah (and Dan's) Special Day, taking place from Friday, 3rd April until Monday, 6th April at Northside Farm, Horsley. This site will give you all the information you need.
 
 ## What's Happening When
 
@@ -67,7 +67,7 @@ You've been invited to Hannah (and Dan's) Special Day, taking place from Friday,
 
 ## Camping Info
 
-For those staying for the whole weekend, _checkout is 12pm on Monday._
+For those staying for the whole weekend, __checkout is 12pm on Monday.__
 
 ### Glamping Pods
 
@@ -83,6 +83,8 @@ If you'd like to camp, bell tents are available from [{{ belltents.name}}]({{ be
 
 We’re thrilled that you're coming to celebrate our wedding with us and don’t expect any gifts but if you'd like to donate to our family honeymoon fund then all donations would be gratefully received. 
 
+<button command="show-modal" commandfor="giftbox">Show bank details</button>
+
 ## Getting There
 
 The whole weekend takes place at: <br> Northside Farm<br>
@@ -90,3 +92,13 @@ Horsley<br>
 NE15 0LZ
 
 <iframe class="flow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.317269094274!2d-1.864583688222916!3d55.001319872701906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ddbcf505ab397%3A0x4e3c8d772456f63!2sNorthside%20Farm!5e1!3m2!1sen!2suk!4v1769113033671!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<dialog id="giftbox" class="flow card">
+  <h2>Gifts</h2>
+  <dl>
+    <dt>Account name </dt><dd>Mr Daniel Sleeth</dd>
+    <dt>Sort code </dt><dd>&#51;&#48;&#45;&#56;&#55;&#45;&#54;&#48;</dd>
+    <dt>Account number </dt><dd>&#49;&#51;&#56;&#52;&#52;&#48;&#54;&#48;</dd>
+  </dl>
+  <button commandfor="giftbox" command="close">Close</button>
+</dialog>

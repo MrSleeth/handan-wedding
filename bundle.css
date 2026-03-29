@@ -397,3 +397,31 @@ form:has(#guest-type-day:checked) #meal {
   margin-block-start: .5em;
   margin-block-end: 2rem;
 }
+
+dialog {
+  width: 60vw;
+  height: 60vw;
+  background-color: var(--lightpink) !important;
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,.4);
+}
+
+dialog::backdrop {
+  background-color: rgba(0,0,0,.4);
+  filter: blur(10px);
+}
+
+dialog > h2 {
+  margin-block-start: 1em;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto auto auto;
+  gap: 1em;
+}
+
+dt, dd {
+  margin: 0;
+}
