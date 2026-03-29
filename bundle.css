@@ -415,13 +415,8 @@ dialog > h2 {
   margin-block-start: 1em;
 }
 
-dl {
-  display: grid;
-  grid-template-columns: max-content auto;
-  grid-template-rows: auto auto auto;
-  gap: 1em;
-}
+dt {font-weight: bold;}
 
 dt, dd {
-  margin: 0;
+  margin: .3em 0;
 }
