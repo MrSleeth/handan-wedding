@@ -399,9 +399,13 @@ form:has(#guest-type-day:checked) #meal {
 }
 
 dialog {
-  width: 80vw;
-  height: 70vw;
-  border-radius: 10px;
+  width: 60vw;
+  height: 60vw;
+}
+
+dialog::backdrop {
+  background-color: rgba(0,0,0,.4);
+  filter: blur(10px);
 }
 
 dl {
