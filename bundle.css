@@ -424,6 +424,6 @@ dt, dd {
 
 dl {
   display: flex;
-  gap: 1em;
+  gap: .5em;
   flex-wrap: wrap;
 }
