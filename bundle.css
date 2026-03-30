@@ -426,4 +426,5 @@ dl {
   display: flex;
   gap: .5em;
   flex-wrap: wrap;
+  margin-block-start: 1.5em;
 }
